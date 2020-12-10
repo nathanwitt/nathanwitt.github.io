@@ -22,6 +22,26 @@
 <!-- Page content -->
 <div class="w3-content w3-padding" style="max-width:1564px">
 
+  <script>
+function myFunction1() {
+  var copyText = document.getElementById("myInput1");
+  copyText.select();
+  copyText.setSelectionRange(0, 99999)
+  document.execCommand("copy");
+  alert("Copied the text: " + copyText.value);
+}
+</script>
+
+<script>
+function myFunction2() {
+  var copyText = document.getElementById("myInput2");
+  copyText.select();
+  copyText.setSelectionRange(0, 99999)
+  document.execCommand("copy");
+  alert("Copied the text: " + copyText.value);
+}
+</script>
+
   <!-- About Section -->
 
   <div class="w3-row-padding w3-grayscale" id="about">
@@ -43,8 +63,10 @@
         engage with my interests in investing, marketing, and clothing.
       </p>
       <h4>Contact Me:</h4>
-      <a class="w3-button w3-light-grey w3-block"> Phone: 989.430.5127</a>
-      <a class="w3-button w3-light-grey w3-block"> Email: wittn@umich.edu</a>
+      <input type="text" value="9894305127" id="myInput1" type="hidden">
+      <a class="w3-button w3-light-grey w3-block" onclick="myFunction1()"> Phone: 989.430.5127</a>
+      <input type="text" value="wittn@umich.edu" id="myInput2" type="hidden">
+      <a class="w3-button w3-light-grey w3-block" onclick="myFunction2()"> Email: wittn@umich.edu</a>
       <p class="w3-center" style='font-size:50px'>&#8659;</p>
     </div>
     <!--
