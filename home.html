@@ -74,8 +74,30 @@ document.onmousedown = rtclickcheck;
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
 
+<style>
+.ele {
+  animation: 4s fadeIn;
+  animation-fill-mode: forwards;
 
-<div class="container center style1" style='text-align: center'>
+  visibility: hidden;
+}
+
+.ele:hover {
+  color: #FFFFFF;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+</style>
+
+<div class="container center style1 ele" style='text-align: center'>
   <div>
 <p>wittn@umich.edu</p>
 <p>989.430.5127</p>
