@@ -81,23 +81,41 @@ document.onmousedown = rtclickcheck;
   border: 3px solid #808080;
   padding: 12px 28px;
 }
+
+.ele {
+  width: 60px;
+  height: 60px;
+
+  background-color: #ff6699;
+  animation: 1s fadeIn;
+  animation-fill-mode: forwards;
+
+  visibility: hidden;
+}
+
+.ele:hover {
+  background-color: #123;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
 </style>
-
-
 
 <div class="container center style1" style='text-align: center'>
   <div class = " typewriter">
 <p>Welcome, my name is Nathan.</p>
 <br>
 </div>
-<div>
-  <a href="home.html"><button id="gobutton" class="button1">Go</button></a>
-  <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-     <script>
-     $(document).ready(function() {
-       $('#gobutton').hide().delay(3000).fadeIn(2200);
-  });
-     </script>
+<div class= "ele">
+  <a href="home.html"><button class="button1">Go</button></a>
 </div>
 
 
