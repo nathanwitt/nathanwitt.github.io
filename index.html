@@ -83,13 +83,20 @@ document.onmousedown = rtclickcheck;
 }
 </style>
 
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+   <script>
+   $(document).ready(function() {
+     $('#gobutton').hide().delay(3000).fadeIn(2200);
+});
+   </script>
+
 <div class="container center style1" style='text-align: center'>
   <div class = " typewriter">
 <p>Welcome, my name is Nathan.</p>
 <br>
 </div>
 <div>
-  <a href="home.html"><button class="button1">Go</button></a>
+  <a href="home.html"><button id="gobutton" class="button1">Go</button></a>
 </div>
 
 
